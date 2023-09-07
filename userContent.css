@@ -1,0 +1,53 @@
+* {
+    /*scrollbar-color:  rgba(47, 47, 47, 0.66) rgba(238, 238, 238, 0.38) !important; */
+    scrollbar-width: thin !important;
+}
+
+@-moz-document url(chrome://browser/content/browser.xul), url(about:newtab), url(about:home),url(about:privatebrowsing) {  
+    body{
+        background-size: cover !important;
+        background-image: url("https://i.imgur.com/yTpHU5T.jpg") !important;
+        backdrop-filter: brightness(75%);
+        --newtab-background-color: rgba(0, 0, 0, 0.5) !important;
+        --newtab-background-color-secondary: rgba(0, 0, 0, 0.8) !important;
+        overflow-x: hidden;
+    }
+
+    /* removing watermark and logo */
+    .logo-and-wordmark{
+        opacity: 0;
+    }
+    
+    .tile, .top-site-outer:hover {
+        background-color: var(--newtab-background-color) !important;
+        backdrop-filter: blur(25px);
+    }
+    
+    .tile .top-site-icon {
+        background-color: transparent !important;
+    }
+
+    #searchSuggestionTable{
+        opacity: 0;
+    }
+
+    /* search border gradient */
+    .search-inner-wrapper{
+        border-radius: 50px;
+        border: double 3px transparent;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), 
+        linear-gradient(90deg, #e08392, #e1a4e4, #e0b4e5, #e8daf8, #6699CC, #5FB3B3 ) !important;
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        overflow: hidden;
+        border-collapse: separate; 
+    }
+    
+    .search-wrapper.fake-focus:not(.search.disabled) .search-handoff-button {
+        border-color: transparent !important;
+    }
+    
+    #newtab-search-text{
+        opacity: 60% !important;
+    }
+}
