@@ -257,15 +257,15 @@
 
 /* downloads popup */
 .downloadTypeIcon {
-  height: 16px !important;
-  width: 16px !important;
+  height: 20px !important;
+  width: 20px !important;
 }
 
-.downloadButton {
+/* .downloadButton {
   min-width: calc(16px + var(--uc-toolbarbutton-inner-inline-padding) * 2) !important;
   height: calc(16px + var(--toolbarbutton-inner-padding) * 2) !important;
   border-radius: var(--toolbarbutton-border-radius) !important;
-}
+} */
 
 .downloadMainArea {
   padding-block: 4px !important;
@@ -278,10 +278,10 @@
   border-radius: var(--arrowpanel-menuitem-border-radius) !important;
 }
 
-#downloadsListBox,
+/* #downloadsListBox,
 .downloadsPanelFooterButton {
   margin: var(--arrowpanel-menuitem-margin) !important;
-}
+} */
 
 #downloadsPanel-blockedSubview,
 #downloadsPanel-mainView {
